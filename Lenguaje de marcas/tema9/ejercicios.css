@@ -1,0 +1,90 @@
+.tarjeta {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px 20px 30px 40px;
+    background: linear-gradient(aquamarine, deepskyblue);
+}
+
+.parrafo {
+    text-align: center;
+}
+
+.parrafo:hover {
+    transform: scale(1.4);
+    opacity: 4;
+    background: linear-gradient(aquamarine, aqua);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.titulo {
+    box-sizing: 10px;
+    text-shadow: 10px 10px 5px;
+}
+
+.columnas {
+    column-count: 4;
+    column-gap: 2px;
+    column-rule: 3px black solid;
+    background-color: grey;
+
+}
+
+.playwrite {
+    font-family: "Playwrite IE", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.dashboard {
+    float: left;
+    background-color: darkred;
+    color: white;
+
+}
+
+.dashboard:hover {
+    transition: 0.5s;
+    background-color: crimson;
+
+}
+
+.contenedor {
+    width: 200px;
+    height: 200px;
+    background-color: steelblue;
+    transform: rotate(5deg);
+
+
+}
+
+.contenedor:hover {
+    transform: rotate(30deg) scale(1.5);
+    transition: 0.5s;
+    background-color: purple;
+
+}
+
+.animacion {
+    background-color: aquamarine;
+    position: relative;
+    animation: mover 2s infinite alternate;
+
+}
+
+@keyframes mover {
+    from {
+        background-color: cyan;
+        left: 0px;
+    }
+
+    to {
+        left: 700px;
+    }
+
+}
+
+.contenedor2 {
+    width: 200px;
+    height: 200px;
+}

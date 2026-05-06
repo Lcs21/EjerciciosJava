@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="procesador.php" method="get">
+       Nombre: <input type="text" name="nombre">
+       <br>
+       Apellidos: <input type="text" name="Apellidos"> 
+       <br>
+       <input type="submit" value="ENVIAR">
+    </form>
+
+
+    <!--Tipos de inputs básicos-->
+    <form action="" method="post">
+        <h4>Texto simple:</h4>
+        <input type="text" name="texto" placeholder="Escribre aqui">
+        <br>
+        <input type="text" name="texto2" value="Escribre aqui">
+        <br>
+        <input type="password" name="contra">
+        <br>
+        <input type="number" name="numerito" step="1" min="18">
+        <br>
+        <input type="email" name="email">
+        <br>
+        <input type="date" name="fecha">
+        <br>
+        <input type="time" name="hora">
+        <br>
+        <input type="submit" name="Enviar">
+        <input type="reset" name="reseteo">
+        
+    </form>
+    <br><br>
+
+
+    <!--Atributos basicos de input-->
+    <form action="" method="get">
+        Usuario:<input type="text" name="usuario" required>
+        <br>
+        Género: <input type="text" name="genero" maxlength="9" minlength="8">
+        <br>
+        Número: <input type="number" name="numerito2" min="1" max="200" minlength="1" maxlength="4">
+        <br>
+        IBAN:<input type="text" name="iban" size="1">
+        <br> 
+        
+        <textarea name="observaciones" rows="5" cols="40">
+
+        </textarea>
+        <input type="submit" value="ENVIAR">
+         
+    </form>
+    <!--CASILLAS DE VERFICIACION-->
+    <form action="" method="get">
+        <p>¿Has hecho deporte?</p>
+        Si<input type="checkbox" name="terminos" value="si">
+        No<input type="checkbox" name="terminos" value="no">
+        <br><br>
+        Si<input type="radio" name="deporte" value="si">
+        No<input type="radio" name="deporte" value="no">
+
+        <p>Qué plato prefiere</p>
+        <select name="platos">
+            <option value="" disabled selected>--ELIJA UNA OPCION--</option>
+            <option value="pizza">pizza</option>
+            <option value="lasagna">Lasagna</option>
+            <option value="hamburguesa">hamburguesa</option>
+            <option value="ensalada">ensalada</option>
+            <option value="poke">poke</option>
+
+        </select>
+        <input type="submit" name="ENVIAR">
+    </form>    
+    
+    <form action="" method="get">
+        <input type="text" name="normal" value="Me puedes editar :D">
+        <input type="text" name="deshabilitado" value="No puedes editarme D:" disabled>
+        <input type="text" name="lectura" value="Puedes copiarme pero no editarme" readonly>
+        <input type="text" name="autofoco" placeholder="El cursos aparece aqui por defecto" autofocus>
+
+
+
+    </form>
+    <br>
+    <br>
+    <!--Para modificar el comportamiento natural del focus(tabindex)-->
+    <form action="" method="get">
+        <input type="text" name="normal" value="Este es el tecero" tabindex="3">
+        <input type="text" name="normal" value="Me puedes editar :D">
+        <input type="text" name="normal" value="Este es el primero" tabindex="1" autofocus>
+        <input type="text" name="normal" value="Me puedes editar :D">
+        <input type="text" name="normal" value="Este es el segundo" tabindex="2">
+
+
+    </form>
+</body>
+</html>

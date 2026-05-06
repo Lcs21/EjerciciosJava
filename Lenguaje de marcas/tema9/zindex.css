@@ -1,0 +1,22 @@
+
+.contenedor{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor1{
+background-color: aqua;
+top: 50px;
+left: 50px;
+}
+.contenedor2{
+background-color: crimson;
+top: 100px;
+left: 100px;
+}
+.contenedor3{
+background-color: greenyellow;
+top: 70px;
+left: 150px;
+}

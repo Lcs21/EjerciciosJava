@@ -1,0 +1,132 @@
+
+/*Selector universal */
+*{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+/* Selector de etiqueta*/
+
+h3{
+    color: green;
+    font-size: 22px; 
+}
+
+
+/*Selector de clase */
+
+.fondo-amarillo{
+    background-color: yellow;
+}
+
+/*Selector ID O selector de indentificador */  
+#parrafo-azul{
+    background-color: blue;
+    color: whitesmoke;
+}
+
+
+/*Selector descendente*/
+
+ol li{
+    background-color: lightgrey;
+}
+
+p>a{
+    background-color: yellow;
+
+
+}
+
+/*Agrupacion de selectores */
+
+h4,h5{
+    border: 1px violet solid;
+}
+
+/*Selector de hermano adyacente */
+
+p + div{
+    border: 5px black solid;
+}
+
+/*SELECTOR DE ATRIBUTO*/
+
+[lang="es"]{
+    background-color: #ff0000;
+    color: #fff000;
+}
+
+[lang="en"]{
+background-color: blue;
+color: white;
+}
+[class="reinounido"]{
+    background-color: blue;
+    color: red;
+}
+
+.caja-color{
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid #333;
+}
+.color-hexadecimal{
+    background-color: #ff5733;
+
+}
+.color-rgb{
+    background-color: rgb(33, 150, 243);
+}
+.color-rgba{
+    background-color: rgba(76, 175, 80, 0.5);
+}
+
+/*ESTILO UNIDADES CAJA MEDIDA*/
+
+.caja-medida{
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid #333;
+    background-color: lightgray;
+}
+ /*Unidades  absolutas*/
+
+ .medida-px{
+    width: 200px;
+    background-color: coral;
+ }
+.medida-cm{
+    width: 10cm;
+    background-color: coral;
+}
+.medida-mm{
+    width: 250mm;
+    background-color: coral;
+}
+.medida-em{
+    font-size: 2em;
+}
+.medida-rem{
+    font-size: 1.5rem;
+}
+.medida-porcentaje{
+    font-size: 300%;
+}
+
+/*HERENCIA Y COLISIONES*/
+
+.colision{
+    color: green;
+    font-size: 17px;
+}
+#parrafo-colision{
+    color: purple;
+    font-size: 18px;
+}
+
+.contenedor-herencia{
+    color: blue;
+    border: 2px dashed blue;
+}
+
+.sin-herencia{
+    color: red;
+}

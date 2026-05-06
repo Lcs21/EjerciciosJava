@@ -1,0 +1,141 @@
+.listas1 {
+    list-style-type: square;
+    list-style-position: outside;
+    list-style-image: "taladro.png";
+}
+
+
+.novisitado:link {
+
+    color: red;
+    text-decoration: none;
+}
+
+.visitado:visited {
+    color: green;
+    text-decoration: none;
+}
+
+.parras:hover {
+    font-size: 1.5em;
+
+}
+
+.focalizar:focus {
+    background-color: aqua;
+    border: 3px dotted purple;
+}
+
+.banderas li:nth-child(odd) {
+    list-style-type: none;
+    text-align: center;
+    background-color: green;
+
+}
+
+.banderas li:nth-child(even) {
+    list-style-type: none;
+    text-align: center;
+    background-color: white;
+
+}
+
+.letra::first-letter {
+    font-size: 5em;
+    text-decoration: wavy, 3px, black;
+    color: aqua;
+}
+
+.Lorem::first-line {
+    background-color: black;
+    color: white;
+    text-decoration: underline dotted;
+}
+
+.Lorem::first-letter {
+    font: 5px;
+    color: blue;
+    text-decoration: line-through 5px;
+}
+
+table,
+td,
+th {
+    border: 2px, black, solid;
+}
+
+.tablita {
+    width: 50%;
+    caption-side: bottom;
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 40px;
+    empty-cells: hide;
+}
+
+
+
+
+.tablita2 td {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    color: whitesmoke;
+    vertical-align: bottom;
+}
+
+.caja1 {
+    background-color: aquamarine;
+    margin: 10px, 20px;
+    padding: 10px;
+    border: 2px steelblue solid;
+}
+
+.bg-image-repeat {
+    background-image: url(taladro.png);
+    background-repeat: repeat;
+}
+
+.tamanios {
+    width: 2000px;
+    max-width: 50%;
+    background-color: aqua;
+    max-height: 40px;
+
+}
+
+.block {
+    background-color: aquamarine;
+    margin: 10px, 20px;
+    padding: 10px;
+    border: 2px steelblue solid;
+    display: block;
+}
+
+.inline {
+    background-color: goldenrod;
+    border: 2px solid lemonchiffon;
+    display: inline;
+
+}
+
+.normal {
+    background-color: aquamarine;
+    border-top: 3px steelblue solid;
+    text-align: center;
+}
+
+.hiden {
+    background-color: aquamarine;
+    border-top: 3px steelblue solid;
+    text-align: center;
+    visibility: hidden;
+}
+
+.none {
+    background-color: aquamarine;
+    border-top: 3px steelblue solid;
+    text-align: center;
+    display: none;
+}
+

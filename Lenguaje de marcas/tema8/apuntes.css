@@ -1,0 +1,49 @@
+/*ALINEACION DE TEXTO */
+.izquierda{
+    text-align: left;
+    background-color: aliceblue;
+}
+.derecha{
+    text-align: right;
+    background-color: beige;
+}
+.centro{
+    text-align: center;
+    background-color: bisque;
+}
+.justificado{
+    text-align: justify;
+    background-color: azure;
+}
+.subrayado{
+    text-decoration: line-through dashed
+    blue 6px;
+}
+
+/* subrayado por debajo con una lína discontinua en color morado y con 3 pixeles de ancho*/
+
+.subrayado-ejercicio{
+    text-decoration: underline dashed
+    purple 3px;
+}
+.espacio-caracteres{
+    letter-spacing: 4px;
+    word-spacing:10px;
+}
+
+.toUpperLower{
+    text-transform: capitalize;
+}
+.interlineado{
+    line-height: 1.5;
+}
+.estiloFuente{
+    font-style: italic;
+}
+.enlaceSoso{
+    text-decoration: none;
+    font-style: normal;
+}
+.anchito{
+    font-weight: 600;
+}

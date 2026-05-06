@@ -1,0 +1,79 @@
+.contenedor {
+    width: 200px;
+    height: 200px;
+    background-color: steelblue;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 200px;
+    
+}
+
+.redondeo {
+    border-radius: 10px;
+
+}
+
+.fondo {
+    background-image: url('fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    font-weight: 900;
+}
+.sombrita{
+    
+    box-shadow: 10px 10px 10px gray;
+    
+}
+.opacidad{
+    opacity: 0.3;
+}
+.lineal{
+    background:linear-gradient(to right,green, yellow);
+}
+
+.gradiant{
+    background:radial-gradient(red,yellow);
+    border-radius: 200px;
+    box-shadow: 20px 10px 10px goldenrod;
+}
+
+.playwrite {
+  font-family: "Playwrite IE", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.columnas{
+    column-count: 3;
+    column-gap:10px ;
+    column-rule: 3px black solid;
+}
+.transformacion{
+    transform: rotate(-180deg);
+}
+.transicion{
+    transition: 1s;
+
+}
+
+.transicion:hover{
+    background-color: crimson;
+    transform: rotate(360deg) scale(1.5);
+}
+.animacion{
+    background-color: aquamarine    ;
+    position:relative;
+    animation: mover 2s infinite alternate;
+
+}
+
+@keyframes mover{
+    from{left:0px;}
+    to{left: 500px;}
+}
+/* 
+Que es @?
+Se usa para lo que se llama las reglas at-rules, son instrucciones especiales que le indican al navegador
+como procesar el CSS. En el caso de los keyframes, se utiliza para definir una animación
+*\

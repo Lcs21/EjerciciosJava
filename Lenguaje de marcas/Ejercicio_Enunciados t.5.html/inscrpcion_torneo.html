@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripción al Torneo</title>
+</head>
+<body>
+
+  <form action="inscripcion_torneo.php" method="POST">
+    <fieldset>
+      <legend>Datos del Jugador</legend>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email"  name="email" required tabindex="1">
+
+      <label for="usuario">Nombre de usuario:</label>
+      <input type="text"  name="usuario" minlength="3" required>
+
+      <label for="edad">Edad:</label>
+      <input type="number"  name="edad" min="12" max="99">
+    </fieldset>
+
+    <fieldset>  
+      <legend>Información del Torneo</legend>
+
+      <label for="fecha">Fecha del torneo:</label>
+      <input type="date" name="fecha" value="2025-06-15" readonly required>
+
+      <label for="videojuego">Videojuego:</label>
+      <select  name="videojuego" tabindex="5">
+        <option value="Ultrakill">Ultrakill</option>
+        <option value="fortnite">Fortnite</option>
+        <option value="Marvel Rivals">Marvel Rivals</option>
+        <option value="Hollow Knight">Hollow Knight</option>
+      </select>
+      <br>
+      <label>Nivel de experiencia:</label>
+      <input type="radio"  name="nivel" value="principiante">
+      <label for="principiante">Principiante</label>
+      <input type="radio"  name="nivel" value="intermedio">
+      <label for="intermedio">Intermedio</label>
+      <input type="radio"  name="nivel" value="experto">
+      <label for="experto">Experto</label>
+      </fieldset>
+      <br>
+      <label>Extras:</label>
+      <input type="checkbox"  name="extras" value="camiseta">
+      <label for="camiseta">Camiseta del torneo</label>
+      <input type="checkbox"  name="extras" value="almuerzo">
+      <label for="almuerzo">Almuerzo incluido</label>
+      <br>
+      <label for="comentarios">Comentarios:</label>
+      <textarea  name="comentarios" rows="3" cols="40" ></textarea>
+      <br>
+      <br>
+
+    
+      <input type="submit" value="Enviar" >
+      <input type="reset" value="Resetear" >
+   
+  </form>
+
+</body>
+</html>

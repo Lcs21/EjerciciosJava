@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!--Seccion 1 FORMAS DE INCLUIR HTML EN CSS-->
+    <div style="border: 2px black dashed;">
+        <h2>me encanta la pizza</h2>
+    <p>Este parrafo tiene el estilo aplicado....</p>
+    </div>
+    <!--Seccion 2 LOS TIPOS DE SELECTORES-->
+    
+    <div style="border: 5px red solid;">
+        
+    </div>
+    <!--Selecto de etiqueta-->
+    <h3>Selector de etiqueta (h3)</h3>
+    
+    <!--Selector de clase-->
+
+    <p class="fondo-amarillo">Este parrafo usa una clase para 
+        cambiar el color de fondo</p>
+    <div class="fondo-amarillo">A este contenedor tambien le cambia el color del fondo
+        con la misma clase
+    </div>
+
+    <!--Selector de identificador-->
+    <p id="parrafo-azul">Este parrafo usa el selector de id</p>
+
+    <!--Selector descendente-->
+
+    <p>Lista con el selector descendente (ol li)</p>
+    <ol>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ol>
+
+    <!--Selector de hijo directo-->
+
+    <p>Párrafo con enlace directo: <a href="">Enlace con fondo fondo-amarillo</a>
+    </p>
+    <blockquote>
+        <p>
+            <q>Párrafo dentro de un blockquote <a href="">Enlace dentro del blockquote</a>
+            </q>
+        </p>
+    </blockquote>
+    <!--Agrupacion de selectores-->
+    <h4>Este h4 tiene el color de la fuente violeta</h4>
+    <h5>Este h5 le pasa lo mismo que al h4 porque a ambos se le aplicadola
+         misma agrupacion de selectores</h5>
+
+    <!--Selector de hermano adyacente-->
+    <p>Este parrafo tiene un div hermano adyacente:</p>
+    <div>Este es el hermano adyacente de p</div>
+    <div>Este no es hermano de p</div>
+
+    <!--SELECTOR DE ATRIBUTOS-->
+
+    <p lang="es">Párrafo en ESPAÑOL con un color de fondo rojo</p>
+    <p lang="en">Paragraph<span class="reinounido">
+        in english with blue</span>background</p>
+
+    <!--SECCION 3: COLORES-->
+    <div style="border: 2px orange solid; ">
+        <!--COLOR POR NOMBRE-->
+        <div class="cajar-color color-nombre">
+            color por nombre: Rojito
+        </div>
+
+         <!--COLOR POR HEXADECIMAL-->
+        <div class="cajar-color color-hexadecimal">
+            color HEXADECIMAL: #FF5733
+        </div>
+         <!--COLOR POR RGB-->
+        <div class="cajar-color color-rgb">
+            Color RGB: rgb(33,150,243)
+        </div>
+         <!--COLOR POR RGBA-->
+        <div class="cajar-color color-rgba">
+            Color RGBA: rgba (76,175,80,0.5)
+        </div>
+    </div>
+    <br><br>
+    <!--SECCION 4: UNIDADES DE MEDIDA-->
+    <div style="border: purple 2px dashed;">
+        <div class="caja-medida  medida-px">
+        Ancho: 200px
+        </div>
+
+        <div class="caja-medida  medida-cm">
+        Ancho: 10cm
+        </div>
+
+        <div class="caja-medida  medida-mm">
+        Ancho: 250mm
+        </div>
+
+        <div class="caja-medida  medida-em">
+        <p>Font-size: 2em</p>
+        </div>
+
+        <div class="caja-medida  medida-rem">
+        Tamaño raíz: 16px
+        </div>
+
+        <div class="caja-medida  medida-porcentaje">
+        Porcentaje aplicado: 300%
+        </div>
+    </div>
+    <br><br>
+    <!--SECCION 5: HERENCIA Y COLISIONES-->
+    <p class="colision" id="parrafo-colision" style="font-size: 20px;">
+        Me encantan los Viernes a ultima hora
+    </p>
+
+    <div class="contenedor-herencia">
+        <p>De que color es este parrafo</p>
+        <p class="sin-herencia">De que color es este párrafo</p>
+    </div>
+
+
+</body>
+</html>
